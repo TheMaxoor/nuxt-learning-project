@@ -1,0 +1,10 @@
+mrossignol:
+  build: .
+  restart: always
+  ports:
+    - '3000'
+  labels:
+    - traefik.backend=mrossignol
+    - traefik.frontend.rule=Host:nuxt.mrossignol.fr
+    - traefik.port=3000
+    - traefik.frontend.entryPoints=http,https
