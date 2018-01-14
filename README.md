@@ -1,4 +1,5 @@
 # NuxtJS Discovery project
+[![DeepScan Grade](https://deepscan.io/api/projects/1662/branches/6622/badge/grade.svg)](https://deepscan.io/dashboard/#view=project&pid=1662&bid=6622)
 
 > A random Nuxt.js project I use to develop my skills.
 
