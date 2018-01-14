@@ -13,6 +13,7 @@ RUN yarn install
 # Build app
 RUN npm run build
 
+ENV HOST 0.0.0.0
 EXPOSE 3000
 
 # start command
