@@ -2,7 +2,7 @@
     <div>
       <b-row>
         <b-col>
-          Hello welcome to this maravellous project. 👏
+          Hello welcome to this marvellous project. 👏
         </b-col>
       </b-row>
     </div>
