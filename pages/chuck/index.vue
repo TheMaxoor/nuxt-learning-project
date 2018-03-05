@@ -7,7 +7,6 @@
 </template>
 
 <script>
-// import <component> from '~/components/<component>.vue'
 import Fact from '~/components/Fact.vue'
 
 export default {
