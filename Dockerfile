@@ -11,6 +11,7 @@ COPY . /usr/src/app/
 RUN apk add --no-cache make gcc g++ python
 RUN npm install --production && npm run build
 
+ENV HOST 0.0.0.0
 EXPOSE 3000
 
 # start command
