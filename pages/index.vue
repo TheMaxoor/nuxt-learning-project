@@ -1,10 +1,10 @@
 <template>
     <div>
-      <b-row>
-        <b-col>
+      <div class="row">
+        <div class="col">
           Hello welcome to this marvellous project. 👏
-        </b-col>
-      </b-row>
+        </div>
+      </div>
     </div>
 </template>
 
