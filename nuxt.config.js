@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'random-shitterino',
+    title: 'Nuxt Learning Project',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -17,15 +17,20 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
-  modules: [
-    'bootstrap-vue/nuxt'
-  ],
   /*
   ** Build configuration
   */
+
+  css: [
+    '@/assets/sass/main.scss'
+  ],
+
   build: {
     // Require axios only once.
-    vendor: ['axios'],
+    vendor: [
+      'axios',
+      'bootstrap'
+    ],
 
     /*
     ** Run ESLint on save

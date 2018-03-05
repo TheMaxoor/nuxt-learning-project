@@ -1,40 +1,27 @@
 <template>
   <div>
-    <b-container>
-      <b-row>
-        <b-navbar toggleable="md" type="light" variant="default">
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+      <div class="container">
+        <nuxt-link :to="{name: 'index'}" class="navbar-brand" >Homepage</nuxt-link>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-
-          <b-navbar-brand :to="{name: 'index'}">Homepage</b-navbar-brand>
-
-          <b-collapse is-nav id="nav_collapse">
-
-            <b-navbar-nav>
-              <b-nav-item to="chuck">Chuck Norris Facts</b-nav-item>
-            </b-navbar-nav>
-          </b-collapse>
-        </b-navbar>
-      </b-row>
-      <b-row>
-        <b-col xs="12">
-          <nuxt/>
-        </b-col>
-      </b-row>
-    </b-container>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <nuxt-link :to="{name: 'chuck'}" class="nav-link" activeClass="active" >Chuck Norris Facts</nuxt-link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <nuxt class="mt-4"/>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
-
-
-<style>
-html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-</style>

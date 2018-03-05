@@ -16,7 +16,7 @@ const createStore = () => {
       }
     },
     actions: {
-      getJoke: async function ({ commit }) {
+      async getJoke ({ commit }) {
         const { data } = await axios.get(this.state.apiURI + '/random')
         commit('setJoke', data)
       }

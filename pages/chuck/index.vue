@@ -1,13 +1,12 @@
 <template>
-  <b-row>
-    <b-col>
+  <div class="row">
+    <div class="col">
       <fact/>
-    </b-col>
-  </b-row>
+    </div>
+  </div>
 </template>
 
 <script>
-// import <component> from '~/components/<component>.vue'
 import Fact from '~/components/Fact.vue'
 
 export default {
