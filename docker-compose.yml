@@ -1,4 +1,4 @@
-mrossignol:
+demo:
   build: .
   restart: always
   ports:
