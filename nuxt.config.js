@@ -20,9 +20,17 @@ module.exports = {
   /*
   ** Build configuration
   */
+
+  css: [
+    '@/assets/sass/main.scss'
+  ],
+
   build: {
     // Require axios only once.
-    vendor: ['axios'],
+    vendor: [
+      'axios',
+      'bootstrap'
+    ],
 
     /*
     ** Run ESLint on save
