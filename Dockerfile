@@ -1,4 +1,4 @@
-FROM node:9.4-alpine
+FROM node:8-alpine
 
 # Create app directory
 RUN mkdir -p /usr/src/app
@@ -8,7 +8,8 @@ WORKDIR /usr/src/app
 RUN apk update && apk upgrade
 
 COPY . /usr/src/app/
-RUN yarn install
+
+RUN yarn install --production --pure-lockfile
 
 # Build app
 RUN npm run build
